@@ -16,10 +16,11 @@ function IsMobile()
 			{
 				if(IsMobile())
 				{
-					var linkElement = document.getElementById('unityContainer');
-					if(linkElement != null)
+					var unityElement = document.getElementById('unity');
+					if(unityElement != null)
 					{
-						linkElement.parentNode.removeChild(element);
+						unityElement.src = " ";
+						//linkElement.parentNode.removeChild(element);
 					}	
 				}
 			}
