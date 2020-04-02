@@ -46,19 +46,22 @@
 			<script src="{{ site.baseurl }}assets/unity/gamesenzo/TemplateData/UnityProgress.js"></script> 
 			
 			<script>
-				var Module = {
+				var gameInstance = UnityLoader.instantiate("gameContainer", "{{ site.baseurl }}assets/unity/gamesenzo/Build/build.json",{onProgress: UnityProgress});  
+			</script>
+			<div class="webgl-content">
+				<div id="gameContainer" style="width: 960px; height: 600px"></div>
+			</div>
+		
+    <script type='text/javascript'>
+  var Module = {
     TOTAL_MEMORY: 268435456,
     errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
     dataUrl: "{{ site.baseurl }}assets/unity/gamesenzo/Build/build.data",
     codeUrl: "{{ site.baseurl }}assets/unity/gamesenzo/Build/build.js",
     memUrl: "{{ site.baseurl }}assets/unity/gamesenzo/Build/build.mem",
-				
-				var gameInstance = UnityLoader.instantiate("gameContainer", "{{ site.baseurl }}assets/unity/gamesenzo/Build/build.json",{onProgress: UnityProgress});  
-			</script>
-			<div class="webgl-content">
-				<div id="gameContainer" style="width: 960px; height: 600px"></div>
-			</div>
+  };
+</script>
 		<script src="{{ site.baseurl }}assets/unity/gamesenzo/Build/UnityLoader2.js"></script> 
           	{{ content }}
         </section>
