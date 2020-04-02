@@ -1,6 +1,6 @@
-			function IsMobile()
-			{
-				console.log(window.outerWidth);
+function IsMobile()
+{
+		console.log(window.outerWidth);
 				console.log(window.outerHeight);
 				if(window.outerWidth < 760)
 				{	
@@ -23,3 +23,5 @@
 					}	
 				}
 			}
+
+window.onload = Mobile;
