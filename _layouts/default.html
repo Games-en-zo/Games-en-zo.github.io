@@ -45,12 +45,7 @@
         <section id="main-content">
 			<script src="{{ site.baseurl }}assets/unity/gamesenzo/TemplateData/UnityProgress.js"></script> 
 			
-			<script>
-				var gameInstance = UnityLoader.instantiate("gameContainer", "{{ site.baseurl }}assets/unity/gamesenzo/Build/build.json",{onProgress: UnityProgress});  
-			</script>
-			<div class="webgl-content">
-				<div id="gameContainer" style="width: 960px; height: 600px"></div>
-			</div>
+<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
 		
     <script type='text/javascript'>
   var Module = {
