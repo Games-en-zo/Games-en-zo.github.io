@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "nl-NL" }}">
-  <head>
+  <head onload="Mobile()">
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,16 +29,19 @@
 			}
 			</script>
 			<script type="text/javascript">
-			$(function() 
-			{      
-    				let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-
-    				if (isMobile) 
+			function IsMobile()
+			{
+				console.log(window.outerWidth);
+				console.log(window.outerHeight);
+				if(window.outerWidth < 760)
+				{	
+					return true;
+				}
+				else
 				{
-					alert("Mobile!");
-        				document.getElementById("unityContainer").className = "MyClass";
-    				}
- 			});
+					return false;
+				}	
+			}
 	  		</script> 
   </head>
   <body>
