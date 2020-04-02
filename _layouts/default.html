@@ -42,6 +42,18 @@
 					return false;
 				}	
 			}
+				
+			function Mobile()
+			{
+				if(IsMobile())
+				{
+					var linkElement = document.getElementById('unityContainer');
+					if(linkElement != null)
+					{
+						linkElement.parentNode.removeChild(element);
+					}	
+				}
+			}
 	  		</script> 
   </head>
   <body>
