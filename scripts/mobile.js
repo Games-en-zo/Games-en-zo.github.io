@@ -16,10 +16,12 @@ function IsMobile()
 			{
 				if(IsMobile())
 				{
-					var unityElement = document.getElementById('unity');
-					if(unityElement != null)
+					var unityElement = document.getElementById('unityScript1');
+					var unityElement2 = document.getElementById('unityScript2');
+					if(unityElement != null && unityElement2 != null)
 					{
 						unityElement.src = " ";
+						unityElement2.src = " ";
 						//linkElement.parentNode.removeChild(element);
 					}	
 				}
