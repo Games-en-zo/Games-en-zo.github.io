@@ -47,16 +47,14 @@
 			
 <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
 		
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    dataUrl: "{{ site.baseurl }}assets/unity/gamesenzo/Build/build.data",
-    codeUrl: "{{ site.baseurl }}assets/unity/gamesenzo/Build/build.js",
-    memUrl: "{{ site.baseurl }}assets/unity/gamesenzo/Build/build.mem",
-  };
-</script>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Games en zo</div>
+      </div>
+    </div>
 		<script src="{{ site.baseurl }}assets/unity/gamesenzo/Build/UnityLoader.js"></script> 
           	{{ content }}
         </section>
