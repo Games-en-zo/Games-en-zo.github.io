@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Test Post"
-unity_dir: games_en_zo
+unity_dir: gamesenzo
 ---
 
 This is a test post.
