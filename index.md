@@ -1,9 +1,8 @@
 ---
 layout: default
-title: Homepage
+title: "Test Post"
+unity_dir: games_en_zo
 ---
 
-[about](https://hiJen14.github.io/pages/about)
+This is a test post.
 
-
-<a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
