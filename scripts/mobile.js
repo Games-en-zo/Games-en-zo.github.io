@@ -1,7 +1,7 @@
 function IsMobile()
 {
+	window.alert(window.outerWidth);
 		console.log(window.outerWidth);
-				console.log(window.outerHeight);
 				if(window.outerWidth < 760)
 				{	
 					return true;
