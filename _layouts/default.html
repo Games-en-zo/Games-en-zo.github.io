@@ -44,6 +44,7 @@
       <div id="inner-content">
         <section id="main-content">
 	<script src="{{ site.baseurl }}assets/unity/gamesenzo/TemplateData/UnityProgress.js"></script> 
+		<script src="{{ site.baseurl }}assets/unity/gamesenzo/Build/UnityLoader.js"></script> 
 			
    <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
@@ -55,8 +56,8 @@
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
         <div class="title">Games en zo</div>
       </div>
-    </div>
-		<script src="{{ site.baseurl }}assets/unity/gamesenzo/Build/UnityLoader.js"></script> 
+    </div
+	    
           	{{ content }}
         </section>
       </div>
