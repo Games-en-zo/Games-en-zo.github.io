@@ -43,18 +43,16 @@
     <div id="content-wrapper">
       <div id="inner-content">
         <section id="main-content">
-	<script src="{{ site.baseurl }}assets/unity/gamesenzo/TemplateData/UnityProgress.js"></script> 
+		<script src="{{ site.baseurl }}assets/unity/gamesenzo/TemplateData/UnityProgress.js"></script> 
 		<script src="{{ site.baseurl }}assets/unity/gamesenzo/Build/UnityLoader.js"></script> 
 			
-   <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "{{ site.baseurl }}assets/unity/gamesenzo/Build/webgl.json", {onProgress: UnityProgress});
-    </script>
+   		<script>
+      			var unityInstance = UnityLoader.instantiate("unityContainer", "{{ site.baseurl }}assets/unity/gamesenzo/Build/webgl.json", {onProgress: UnityProgress});
+    		</script>
     	<div class="webgl-content">
       		<div id="unityContainer" style="width: 960px; height: 600px"></div>
-      		<div class="footer">
         	<div class="webgl-logo"></div>
-        	<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        	<div class="title">Games en zo</div>
+        	<a class="fullscreen" onclick="unityInstance.SetFullscreen(1)">Full Screen</a>
       	</div>
 	    
           	{{ content }}
