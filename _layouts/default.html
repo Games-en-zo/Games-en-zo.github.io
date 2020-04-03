@@ -47,11 +47,11 @@
    		<script>
 			if(!UnityLoader.SystemInfo.mobile)
   			{
-				var button = document.getElementsByTagName('button');
-				button[0].onclick = "";
-				button[0].innerHTML = "";
-				button[0].width = "0px";
-				button[0].height = "0px";
+				var button = document.getElementById('FullScreen');
+				button.onclick = "";
+				button.innerHTML = "";
+				button.width = "0px";
+				button.height = "0px";
 				
       				var unityInstance = UnityLoader.instantiate("unityContainer", "{{ site.baseurl }}assets/unity/gamesenzo/Build/webgl.json", {onProgress: UnityProgress});
 			}
@@ -66,7 +66,7 @@
     	<div class="webgl-content">
       		<div id="unityContainer" style="width: 960px; height: 600px"></div>
         	<div class="webgl-logo"></div>
-		<button onclick="unityInstance.SetFullscreen(1)">Full Screen</button>
+		<button id="FullScreen" onclick="unityInstance.SetFullscreen(1)">Full Screen</button>
       	</div>
 	    
           	{{ content }}
