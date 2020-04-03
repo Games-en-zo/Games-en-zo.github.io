@@ -1,3 +1,5 @@
+Mobile();
+
 function IsMobile()
 {
 	window.alert(window.outerWidth);
@@ -28,5 +30,3 @@ function IsMobile()
 					}	
 				}
 			}
-
-window.onload = Mobile;
