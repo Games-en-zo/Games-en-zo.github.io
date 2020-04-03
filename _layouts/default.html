@@ -47,7 +47,7 @@
    		<script>
 			if(!UnityLoader.SystemInfo.mobile)
   			{
-				var button = document.getElementById('FullScreen');
+				var button = document.getElementById('fullscreen');
 				button.onclick = "";
 				button.innerHTML = "";
 				button.width = "0px";
@@ -66,7 +66,7 @@
     	<div class="webgl-content">
       		<div id="unityContainer" style="width: 960px; height: 600px"></div>
         	<div class="webgl-logo"></div>
-		<button id="FullScreen" onclick="unityInstance.SetFullscreen(1)">Full Screen</button>
+		<button id="fullscreen" onclick="unityInstance.SetFullscreen(1)">Full Screen</button>
       	</div>
 	    
           	{{ content }}
