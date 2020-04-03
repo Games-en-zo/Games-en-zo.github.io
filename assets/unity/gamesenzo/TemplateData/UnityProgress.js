@@ -1,4 +1,5 @@
 function UnityProgress(unityInstance, progress) {
+  Console.Log(unityInstance.Mobile);
   if (!unityInstance.Module)
     return;
   if (!unityInstance.logo) {
