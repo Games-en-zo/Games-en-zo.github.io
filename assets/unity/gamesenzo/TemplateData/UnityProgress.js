@@ -1,5 +1,5 @@
 function UnityProgress(unityInstance, progress) {
-  console.log(unityInstance.Mobile);
+  console.log(UnityLoader.SystemInfo.mobile);
   if (!unityInstance.Module)
     return;
   if (!unityInstance.logo) {
