@@ -1,8 +1,6 @@
 ---
 ---
 
-//@import "{{ site.theme }}";
-
 html, body 
 {
   margin: 0px;
@@ -37,6 +35,7 @@ hr
 
 header 
 {
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     border-bottom: solid 1px #275da1;
@@ -51,7 +50,7 @@ header
   background-color: #000;
 }
 
-header h1 
+/*header h1 
 {
     width: 75%;
     margin-top: 0;
@@ -61,7 +60,7 @@ header h1
     line-height: 1;
     color: #fff;
     letter-spacing: -1px;
-}
+}*/
 
 footer 
 {
@@ -125,7 +124,7 @@ header h1
     width: 540px;
     margin-top: 0;
     margin-bottom: 0.2em;
-    font-size: 72px;
+    font-size: 60px;
     font-weight: normal;
     line-height: 1;
     color: #fff;
