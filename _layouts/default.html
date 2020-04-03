@@ -68,13 +68,16 @@
 	</div>
    </footer>
 	  <script type="text/javascript">
-		  if(!UnityLoader.SystemInfo.mobile)
+		  if(UnityLoader.SystemInfo.mobile)
   		  {
 				var button = document.getElementById("fullscreen");
 				button.onclick = function(){}
 				button.innerHTML = "";
 				button.width = "0px";
 				button.height = "0px";
+			  
+			     	var unitycontainer = document.getElementById("unityContainer");
+			 	unitycontainer.innerHTML = "<p>Webapplicatie niet beschikbaar op mobiele telefoon.</p>"; 
 		  }
 	  </script>
   </body>
