@@ -47,10 +47,11 @@
    		<script>
 			if(!UnityLoader.SystemInfo.mobile)
   			{
-				var element = document.getElementsByTagName('button');
-				for (index = element.length - 1; index >= 0; index--) {
-    					element[index].parentNode.removeChild(element[index]);
-				}
+				var button = document.getElementsByTagName('button');
+				button[0].onclick = "";
+				button[0].innerHTML = "";
+				button[0].width = "0px";
+				button[0].height = "0px";
 				
       				var unityInstance = UnityLoader.instantiate("unityContainer", "{{ site.baseurl }}assets/unity/gamesenzo/Build/webgl.json", {onProgress: UnityProgress});
 			}
