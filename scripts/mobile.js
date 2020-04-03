@@ -23,9 +23,9 @@ function IsMobile()
 					var unityElement3 = document.getElementById('unityScript3');
 					if(unityElement != null && unityElement2 != null && unityElement3 != null)
 					{
-						unityElement.src = " ";
-						unityElement2.src = " ";
-						unityElement3.innerHTML = " ";
+						//unityElement.src = " ";
+						//unityElement2.src = " ";
+						//unityElement3.innerHTML = " ";
 						//linkElement.parentNode.removeChild(element);
 					}	
 				}
