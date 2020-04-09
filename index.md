@@ -8,8 +8,8 @@ unity_dir: gamesenzo
 <br />
 
 | &nbsp;&nbsp; Omschrijving &nbsp;&nbsp; | &nbsp;&nbsp; Versie &nbsp;&nbsp; | &nbsp;&nbsp; Datum &nbsp;&nbsp; |
-| Playstation 4 games opgenomen in app. | v0.0.1 | 09-04-2020 | 
-| XBOX ONE games opgenomen in app. | v0.0.1 |  09-04-2020 |
+| &nbsp;&nbsp; Playstation 4 games opgenomen in app. &nbsp;&nbsp; | &nbsp;&nbsp; v0.0.1 &nbsp;&nbsp; | &nbsp;&nbsp; 09-04-2020 &nbsp;&nbsp; | 
+| &nbsp;&nbsp; XBOX ONE games opgenomen in app. &nbsp;&nbsp; | &nbsp;&nbsp; v0.0.1 &nbsp;&nbsp; | &nbsp;&nbsp; 09-04-2020 &nbsp;&nbsp; |
 
 <br />
 <br />
